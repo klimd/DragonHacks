@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div#test{ border:#000 1 px solid; padding:10px 40px 40px 40px;}
+</style>
+<script>
+var pos = 0, test, test_status, question, correct=0;
+var questions = [
+	["Find the most frequent integer in an array"],
+	["Find the only element in an array that only occurs once."],
+	["Check if String is a palindrome"],
+	["Check if a String is composed of all unique characters"]   
+];
+ function _(x){
+	return document.getElementById(x);
+ }
+ function renderQuestion (){
+	test = _("test");
+	_("test_status").innerHTML = "Question" + (pos+1)" of " + questions.length;
+ 
+ }
+</script>
+</head>
+
+<body>
+<h2 id="test_status"></h2>
+<div id="test"></div>  
+</body>
+
+</html> 

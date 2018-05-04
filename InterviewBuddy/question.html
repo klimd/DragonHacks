@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <title>Testing</title>
+
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="script.js" rel="script">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+		<script LANGUAGE = "JavaScript" id="demo">
+		
+			function question(document.forms.out)
+			{
+				
+				var cs = ["Find the most frequent integer in an array", "Find pairs in an integer array whose sum is equal to 10 ", "c"];
+				var random = Math.random();
+				
+				var print;
+				
+				if(random<0.3) print=cs[0]
+				else if(random=>0.3 && random<=0.7) print=cs[1]
+				else print=cs[2]
+				
+				form.output.value= print
+				return ""				
+			
+			}
+		
+		</script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+          <ul class="navigation">
+            <li><a href="home.html"><span style="color:#CC0066; font-weight: 800;">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+          </ul>
+
+        <div id="game">
+            <span class="left">Minutes left: </span>
+        </div>
+
+
+        <h1>CS Interview</h1>
+
+            <form action="demo_form.asp" name="out">
+			<output name="output"></output>
+
+            Enter response: <p></p>
+
+            <textarea></textarea>
+
+                <input type="submit" value="Submit"><br><br>
+
+            </form>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
